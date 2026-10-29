@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Html_Serializer
 {
-    public class HtmlParser
+    public class HtmlSerializer
     {
         public HtmlElement Parse(IEnumerable<string> htmlLines)
         {

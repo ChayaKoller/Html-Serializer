@@ -11,7 +11,7 @@ var htmlLines = Regex.Split(html, "<(.*?)>")
     .Where(s => !string.IsNullOrWhiteSpace(s));
 
 // Build HTML tree
-HtmlParser parser = new HtmlParser();
+HtmlSerializer parser = new HtmlSerializer();
 HtmlElement root = parser.Parse(htmlLines);
 
 // Search elements using CSS-like selector
